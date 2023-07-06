@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod RRolleh hello
+chmod -r olleh hello
