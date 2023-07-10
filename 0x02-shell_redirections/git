@@ -1,7 +1,9 @@
 #!/bin/bash
- echo "msg"
-read msg
-
+ echo "ur filename"
+read filename
+chmod u+x ${filename}
+echo "ur commit"
+read commit
 git add .
-git commit -m "${msg}"
+git commit -m "${commit}"
 git push
