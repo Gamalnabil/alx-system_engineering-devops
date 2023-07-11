@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "ur file name"
+read file
+chmod u+x ${file}
+
+echo "put ur msg"
+read msg
+git add .
+git commit -m "${msg}"
+git push
