@@ -1,2 +1,2 @@
-#!/bin/bash
-echo "ibase=water; $WATER"|bc -lq| tr -d '\n'; echo "+ ibase=stir; $STIR" | bc -lq | tr -d '\n'; echo | bc -lq | tr -d '\n'; echo "obase=bestchol; ibase=10; $(cat)" | bc -lq
+#!/bin/bash  
+echo -n "ibase=water; $WATER + ibase=stir; $STIR" | bc | (read -r result; echo -n "obase=bestchol; ibase=10"; echo "$result" | bc)
